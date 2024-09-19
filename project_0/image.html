@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <nav class="nav_options">
-                <ul>
-                    <li><a href="image.html">Image Search</a></li>
-                    <li><a href="advanced.html">Advanced Search</a></li>
-                </ul>
+            <nav class="navbar">
+                <div class="nav-buttons">
+                    <a href="index.html">Simple search</a>
+                    <a href="advanced.html">Advanced</a>
+                </div>
             </nav>
         </header>
-        <div class="sourch">
-            <form action="https://google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
-            </form>
+        <div class="container">
+            <div class="div-logo">
+                <img src="google_logo.png" alt="google_logo">
+            </div>
+            <div class="div-search">
+                <form action="https://images.google.com/search">
+                    <input type="hidden" name="tbm" value="isch">
+                    <input type="text" name="q" id="search-input">
+                    <input type="submit" value="Google Search" name="search-button" id="search-button">
+                </form>
+            </div>
         </div>
     </body>
 </html>

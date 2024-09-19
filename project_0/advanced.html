@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="nav-logo">
+                    <img src="google_logo.png" alt="google_logo">
+                </div>
+                <div class="nav-buttons">
+                    <a href="index.html">Simple search</a>
+                    <a href="image.html">Imagem</a>
+                </div>
+            </nav>
+        </header>
+        <div class="advanced-search">
+            <h1>Advanced Search</h1>
+        </div>
+        <div class="search-container">
+            <form action="https://google.com/search">
+                <div class="search-field">
+                    <label for="all-words">all this words:</label>
+                    <input type="text" id="as_q" name="as_q">
+                </div>
+                <div class="search-field">
+                    <label for="exact-phrase">This exact expression or phrase:</label>
+                    <input type="text" id="as_epq" name="as_epq">
+                </div>
+                <div class="search-field">
+                    <label for="any-words">any of these words:</label>
+                    <input type="text" id="as_oq" name="as_oq">
+                </div>
+                <div class="search-field">
+                    <label for="none-words">none of theses words:</label>
+                    <input type="text" id="as_eq" name="as_eq">
+                </div>
+                <div class="search-field range">
+                    <label for="number-range-start">numbers that vary from:</label>
+                    <input type="number" id="as_nlo" name="as_nlo">
+                    <span>to</span>
+                    <input type="number" id="as_nhi" name="as_nhi">
+                </div>
+                <div class="submit-button">
+                    <button type="submit" id="advanced-search-btn">Advanced Search</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

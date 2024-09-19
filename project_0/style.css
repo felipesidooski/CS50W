@@ -1,30 +1,59 @@
 .navbar {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start; 
-    padding: 20px 20px; 
-    color: white; 
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 20px;
+    color: white;
     position: fixed;
     top: 0;
-    width: 90%;
+    width: 95%;
     z-index: 1000;
+    background-color: white; /* Adiciona fundo para navbar */
 }
 
-.navbar a {
+.nav-logo {
+    display: flex;
+    align-items: center; /* Centraliza a imagem e o texto verticalmente */
+}
+
+.nav-logo img {
+    height: 30px; /* Reduz o tamanho da logo */
+    margin-right: 10px; /* Espaço entre logo e texto */
+}
+
+.advanced-search {
+    font-weight: bold;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    padding: 10px; /* Adiciona espaçamento */
+    margin-top: 60px; /* Para evitar sobreposição com a navbar fixa */
+    text-align: left; /* Centraliza o texto na div */
+}
+
+.advanced-search h1{
+    color: #d93025;
+    font-size: 24px; /* Aumenta o tamanho da fonte */
+    font-weight: bold;
+}
+
+.nav-buttons {
+    margin-left: auto; /* Move os botões de navegação para a direita */
+}
+
+.nav-buttons a {
     color: #0b57d0;
     margin: 0 15px;
     text-decoration: none;
     transition: background-color 0.3s;
 }
 
-.navbar a:hover{
+.nav-buttons a:hover {
     font-weight: bold;
 }
 
 .content {
     padding-top: 60px;
 }
-
 
 .container {
     display: flex;
@@ -37,7 +66,7 @@
 .div-logo {
     width: 500px;
     height: 200px;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -48,7 +77,7 @@
     width: 500px;
     height: 50px;
     display: flex;
-    position: absolute; 
+    position: absolute;
     top: 62%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -83,8 +112,70 @@
     transition: all 0.3s ease;
 }
 
-#search-button:hover{
+#search-button:hover {
     outline: none;
     box-shadow: 0 0 0 2px rgba(186, 186, 207, 0.726);
     border-color: #ccc;
+}
+
+
+.search-container {
+    font-weight: bold;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.search-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.search-field label {
+    display: inline-block;
+    width: 300px; /* Largura fixa para os labels */
+    font-weight: normal;
+    color: black;
+    white-space: nowrap; /* Impede quebras de linha */
+    padding: 5px;
+}
+
+.search-field input {
+    padding: 8px;
+    width: 500px; /* Mesma largura para todos os inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura */
+}
+
+.range input {
+    width: 235px;
+    box-sizing: border-box;
+}
+
+.range span {
+    padding: 0 10px;
+}
+
+.submit-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza o botão de submissão */
+}
+
+#advanced-search-btn {
+    background-color: #0b57d0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#advanced-search-btn:hover {
+    background-color: #4d90fe;
 }
